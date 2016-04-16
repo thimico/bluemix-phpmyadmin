@@ -1,0 +1,11 @@
+---
+applications:
+- name: phpmyadmin
+  memory: 128M 
+  instances: 1
+  host: phpmyadmin
+  domain: thimico.blogspot.com.br
+  path: .
+  buildpack: https://github.com/thimico/bluemix-phpmyadmin
+  services:
+  - mysql-db
